@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JspFiles.iml" filepath="$PROJECT_DIR$/JspFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lab10_Part1_Project2_DroneDataService.iml" filepath="$PROJECT_DIR$/Lab10_Part1_Project2_DroneDataService.iml" />
+    </modules>
+  </component>
+</project>
