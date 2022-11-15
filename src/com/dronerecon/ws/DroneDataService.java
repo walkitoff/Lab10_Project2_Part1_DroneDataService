@@ -3,8 +3,11 @@ package com.dronerecon.ws;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.net.URL;
 
 /**
  *
@@ -38,6 +41,19 @@ public class DroneDataService extends HttpServlet{
         String totalcols = request.getParameter("totalcols");
         String totalrows = request.getParameter("totalrows");
 
+        //********  PART 2   d. ********
+        //** request.getParameter r and g **
+        String r = request.getParameter("r");
+        String g = request.getParameter("g");
+        //** create URL obj and append "&"+ each parameter **
+        //EXAMPLE http://127.0.0.1:8080/dronereconportal/PortalDBService?area_id=1&tilex=1&tiley=1&r=1&g=1
+        try {
+            URL url = new URL(String.format("http://127.0.0.1:8080/dronereconportal/PortalDBService?area_id=%s&tilex=%s&tiley=%s&r=%s&g=%s", area_id, tilex, tiley, r, g));
+
+            BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
 
         // ##############################
         // 2. Default value of beginning direction.
