@@ -2,7 +2,7 @@
   <artifact type="jar" build-on-make="true" name="DroneDataService:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/DroneDataService_jar</output-path>
     <root id="archive" name="DroneDataService.jar">
-      <element id="module-output" name="Lab10_Part1_Project2_DroneDataService" />
+      <element id="module-output" name="Project_2_DroneSim" />
       <element id="extracted-dir" path="C:/Program Files/Apache Software Foundation/Tomcat 9.0/lib/servlet-api.jar" path-in-jar="/" />
     </root>
   </artifact>

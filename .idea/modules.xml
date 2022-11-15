@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JspFiles.iml" filepath="$PROJECT_DIR$/JspFiles.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lab10_Part1_Project2_DroneDataService.iml" filepath="$PROJECT_DIR$/Lab10_Part1_Project2_DroneDataService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Project_2_DroneSim.iml" filepath="$PROJECT_DIR$/Project_2_DroneSim.iml" />
     </modules>
   </component>
 </project>
