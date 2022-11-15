@@ -60,7 +60,7 @@ public class DroneDataService extends HttpServlet{
 
         // Set a string called sDirection to "right".
         // ##############################
-        String sDirection = "";
+        String sDirection = ""; //empty on purpose
 
 
         // ##############################
@@ -114,6 +114,14 @@ public class DroneDataService extends HttpServlet{
             }
         }
 
+        //alternate logic for stop
+        /*
+            if (iTiley == iTotalrows){
+            //then drone has pasted final row
+              sDirection = "stop";
+              }
+        */
+
         // ##############################
         // 4. Format & Return JSON string to caller.
 
@@ -121,15 +129,21 @@ public class DroneDataService extends HttpServlet{
         {"area_id":"[area id from above]", "nextTileX":"[next tile x]", "nextTileY":"[next tile y]", "direction":"[direction string from above]"}
         */
         // ##############################
-        String sResponseJSON = "{" +
-                                    "\"area_id\":\"" + area_id + "\"," +
-                                    "\"nextTileX\":\"" + iTilex +"\"," +
-                                    "\"nextTileY\":\"" + iTiley +"\"," +
-                                    "\"direction\":\"" + sDirection +"\"" +
-                              "}";
+//        String sResponseJSON = "{" +
+//                                    "\"area_id\":\"" + area_id + "\"," +
+//                                    "\"nextTileX\":\"" + iTilex +"\"," +
+//                                    "\"nextTileY\":\"" + iTiley +"\"," +
+//                                    "\"direction\":\"" + sDirection +"\"" +
+//                              "}";
 
 
-        out.println(sResponseJSON);
+        //alternate format
+        String sfResponseJSON = String.format("{\"area_id\":\"%s\", \"nextTileX\":\"%s\", \"nextTileY\":\"%s\", \"direction\":\"%s\"}",
+                                                area_id, iTilex, iTiley, sDirection);
+
+
+        //out.println(sResponseJSON);
+        out.println(sfResponseJSON);
 
 
     }
