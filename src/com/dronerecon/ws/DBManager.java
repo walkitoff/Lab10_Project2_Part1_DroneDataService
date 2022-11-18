@@ -12,7 +12,7 @@ public class DBManager {
     //public String DBLocation = "dronedata.sqlite"; // For running from an IDE w/ DB located in local project folder.
 
     // For running in IDE but accessing full path to DB in Tomcat website (NOTE: May need to adjust 8.5).
-    public String DBLocation = "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps\\dronereconportal\\db\\dronedata.sqlite";
+    public String DBLocation = "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\dronereconportal\\db\\dronedata.sqlite";
 
     // Create connection with DB.
     // This is called internally by each CRUD function as a first step.
