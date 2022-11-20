@@ -35,8 +35,8 @@ public class PortalDBService extends HttpServlet{
         DBManager oDBManager = new DBManager();
 
         // Set DB location (Currently uses current DB file name and adds direct path from C drive before it).
-        oDBManager.DBLocation = System.getProperty("catalina.base") + "\\webapps\\dronereconportal\\db\\" + oDBManager.DBLocation;
-
+       // oDBManager.DBLocation = System.getProperty("catalina.base") + "\\webapps\\dronereconportal\\db\\" + oDBManager.DBLocation;
+        oDBManager.DBLocation = "C:\\Apache Software Foundation\\Tomcat 9.0\\webapps\\dronereconportal\\db\\dronedata.sqlite";
 
         // ############
 		// Call insertAreaGridTile on db manager object and pass the 5 values from above.

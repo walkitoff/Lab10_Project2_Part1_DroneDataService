@@ -12,7 +12,10 @@ public class DBManager {
     //public String DBLocation = "dronedata.sqlite"; // For running from an IDE w/ DB located in local project folder.
 
     // For running in IDE but accessing full path to DB in Tomcat website (NOTE: May need to adjust 8.5).
-    public String DBLocation = "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\dronereconportal\\db\\dronedata.sqlite";
+        // PC PATH
+    // public String DBLocation = "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\dronereconportal\\db\\dronedata.sqlite";
+        // Laptop PATH
+    public String DBLocation = "C:\\Apache Software Foundation\\Tomcat 9.0\\webapps\\dronereconportal\\db\\dronedata.sqlite";
 
     // Create connection with DB.
     // This is called internally by each CRUD function as a first step.
@@ -114,16 +117,16 @@ public class DBManager {
     }
 
     // Only for testing in an IDE.
-    public static void main(String[] args){
-
-        DBManager oDBManager = new DBManager();
-        oDBManager.insertAreaGridTile("abc123",10,10,243,109);
-        System.out.println("Record inserted.");
-
-        ArrayList<AreaGridTile> oTiles = oDBManager.readAreaGridTiles("23abc");
-
-        for(AreaGridTile oTile: oTiles){
-            System.out.println("tile: " + oTile.x + "," + oTile.y);
-        }
-    }
+//    public static void main(String[] args){
+//
+//        DBManager oDBManager = new DBManager();
+//        oDBManager.insertAreaGridTile("abc123",10,10,243,109);
+//        System.out.println("Record inserted.");
+//
+//        ArrayList<AreaGridTile> oTiles = oDBManager.readAreaGridTiles("23abc");
+//
+//        for(AreaGridTile oTile: oTiles){
+//            System.out.println("tile: " + oTile.x + "," + oTile.y);
+//        }
+//    }
 }

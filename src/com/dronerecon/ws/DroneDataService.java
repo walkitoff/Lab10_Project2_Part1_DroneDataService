@@ -43,13 +43,16 @@ public class DroneDataService extends HttpServlet{
 
         //********  PART 2   d. ********
         //** request.getParameter r and g **
+
         String r = request.getParameter("r");
         String g = request.getParameter("g");
+
         //** create URL obj and append "&"+ each parameter **
         //EXAMPLE http://127.0.0.1:8080/dronereconportal/PortalDBService?area_id=1&tilex=1&tiley=1&r=1&g=1
-        String sServiceReturnJson = "";
 
-        //TODO: what does this do???
+
+        //TODO: ASK TEACHER HOW THIS WORKS,
+        // theres no use of the buffered reader
         try {
             URL url = new URL(
                         String.format("http://127.0.0.1:8080/dronereconportal/PortalDBService?area_id=%s&tilex=%s&tiley=%s&r=%s&g=%s",
@@ -57,10 +60,7 @@ public class DroneDataService extends HttpServlet{
             );
 
             BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
-            String strTemp = "";
-            while (null != (strTemp = br.readLine())) {
-                sServiceReturnJson += strTemp;
-            }
+
         }catch (Exception ex){
             ex.printStackTrace();
         }

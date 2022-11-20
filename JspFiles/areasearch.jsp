@@ -2,22 +2,36 @@
 //a.	areasearch.jsp:  It has a text box input for area ID and a submit button that submits to a second JSP.
 //b.	arearesults.jsp:
 %>
-
 <html>
-  <!--<body style="background: linear-gradient(to right, rgb(20, 20, 20), rgb(100,100,100));">-->
-    <body Style = "
-      background-size: 20px 20px;
-      background-image: linear-gradient(to right, grey 1px, transparent 1px),
-      linear-gradient(to bottom, grey 1px, transparent 1px);
-    "></body>
-     <!--background: repeating-radial-gradient(circle at 1% 99%, rgb(0, 0, 0), rgb(0, 160, 20) 60px, rgb(245, 7, 7) 100px); -->
+  <head>
+    <style>
+      body {
+        background-size: 20px 20px;
+        background-image: linear-gradient(to right, grey 1px, transparent 1px),
+                          linear-gradient(to bottom, grey 1px, transparent 1px);
+        animation: background 40s linear infinite;
+      }
+
+      @keyframes background {
+        0% {background-position: 0% 100%; }
+       
+      }
+    </style>
+    <title>Area_ID Search</title>
+  </head>
+  <body>
 
       <br />
       <h2 style="text-align:center;
-                background-color:rgb(128, 128, 128);
-                color:white
+                background-color:rgb(19, 19, 19);
+                color:white;
+                margin: 0% 10% 0% 10%;
+                border: 1px solid;
+                border-radius: 10px;
+                padding: 10px;
+                box-shadow: 5px 10px gray;
                 "
-                >AREA SEARCH</h2>
+                >AREA_ID SEARCH</h2>
 
       <!-- ###################################################
       Create a form here where the action is set to "drone_sim.jsp".
@@ -26,18 +40,18 @@
       Set a text input with name as "rowcount".
       Create a button with text similar to this: "Create Area Grid".
       ################################################### -->
-      <form 
-        style = "
-          border: 6px outset;
-          border-radius: 10px; 
-          background: lightgray; 
-          margin: 20px 30% 0px 30%;
-          padding: 20px;
-          
-         " 
-        action="arearesults.jsp"
-      >
-      <table style = "font-size: x-large;">
+    <form 
+      style = "
+        border: 6px outset;
+        border-radius: 10px; 
+        background: lightgray; 
+        margin: 20px 30% 0px 30%;
+        padding: 20px;
+        
+        " 
+      action="arearesults.jsp"
+    >
+        <table style = "font-size: x-large;">
         <hr>
 
         

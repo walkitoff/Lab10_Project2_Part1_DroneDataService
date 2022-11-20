@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Project_2_DroneSim:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Project_2_DroneSim_jar</output-path>
+    <root id="archive" name="Project_2_DroneSim.jar">
+      <element id="module-output" name="Project_2_DroneSim" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Apache Software Foundation/Tomcat 9.0/webapps/dronereconportal/WEB-INF/lib/sqlite-jdbc-3.15.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Apache Software Foundation/Tomcat 9.0/webapps/dronereconportal/WEB-INF/lib/gson-2.8.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Apache Software Foundation/Tomcat 9.0/lib/servlet-api.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
